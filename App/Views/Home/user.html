@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %} Dashboard {% endblock %}
+
+{% block nav %} Profile {% endblock %}
+
+{% block body %}
+
+    <div class="col-lg-4 col-md-5">
+        <br>
+        <div class="card card-user">
+          <div class="image">
+            <img src="/assets/img/background.jpg" alt="...">
+          </div>
+          <div class="content">
+            <div class="author">
+              <img class="avatar border-white" src="/assets/img/faces/face-2.png" alt="...">
+              <h4 class="title">{{ user.name }}<br>
+                <a href="/"><small>Unique Id: {{ user.unique_id }}</small></a>
+              </h4>
+            </div>
+            <p class="description text-center">{{ user.email }}</p>
+          </div>
+          <hr>
+        </div>
+        
+    </div>
+
+{% endblock %}

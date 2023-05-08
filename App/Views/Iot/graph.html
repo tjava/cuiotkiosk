@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %} Graph | Project Popoola{% endblock %}
+
+{% block nav %} Graph {% endblock %}
+
+{% block body %}
+
+    <!-- Main content -->
+    <section class="content">
+      <!-- Small boxes (Stat box) -->
+      <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    </section>
+    <!-- /.content -->
+
+  	<script type="text/javascript">
+		Highcharts.chart('container', {
+			chart: {
+				type: 'line'
+			},
+			title: {
+				text: 'IoT Graph'
+			},
+			subtitle: {
+				text: 'Source: devapi.tk'
+			},
+			xAxis: {
+				categories: [{% for time in times %} "{{ time }}",{% endfor %}]
+			},
+			yAxis: {
+				title: {
+					text: 'IoT Data'
+				}
+			},
+			plotOptions: {
+				line: {
+					dataLabels: {
+						enabled: true
+					},
+					enableMouseTracking: true
+				}
+			},
+			series: [{
+				name: 'Current1',
+				data: [{{ current1 }}]
+			}, {
+				name: 'Current2 ',
+				data: [{{ current2 }}]
+			}, {
+				name: 'Current3',
+				data: [{{ current3 }}]
+			}, {
+				name: 'Battery',
+				data: [{{ battery }}]
+			}]
+		});
+    </script>
+
+{% endblock %}

@@ -1,0 +1,196 @@
+[23-Mar-2023 17:17:29 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 17:17:30 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 17:17:33 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/robots.tx...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 17:17:33 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/sitemap.x...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 17:17:34 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/robots.tx...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 17:17:34 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/sitemap.x...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 17:17:53 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 17:17:57 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/robots.tx...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 17:17:57 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/sitemap.x...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 17:17:58 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 17:18:02 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/robots.tx...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 17:18:03 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/sitemap.x...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 18:02:04 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('robots.txt')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:14:55 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:14:55 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:14:56 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:14:57 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:14:58 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/sitemap.x...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:15:02 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/robots.tx...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:15:02 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/sitemap.x...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:15:02 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/robots.tx...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:15:02 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/sitemap.x...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:15:03 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/sitemap.x...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:15:05 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/robots.tx...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:15:05 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/robots.tx...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:15:29 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:15:29 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:15:32 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('assets/img/favi...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:15:32 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/sitemap.x...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:15:32 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/robots.tx...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:15:32 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/robots.tx...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:15:32 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/sitemap.x...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:15:32 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('assets/img/favi...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:16:07 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/sitemap.x...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:16:08 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/sitemap.x...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:16:08 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/robots.tx...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:16:09 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/robots.tx...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:29:10 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:29:13 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/robots.tx...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:29:13 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/sitemap.x...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:29:16 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('favicon.ico')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:29:19 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/sitemap.x...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:29:19 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/robots.tx...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:29:29 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('assets/img/favi...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:29:34 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('assets/img/favi...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:30:02 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/robots.tx...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:30:02 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/sitemap.x...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:30:09 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/robots.tx...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130
+[23-Mar-2023 22:30:10 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /home/bluewavetk/public_html/projectpopoola.xyz/index.php(43): Core\Router->dispatch('login/sitemap.x...')
+#1 {main}
+Thrown in '/home/bluewavetk/projectpopoola/Core/Router.php' on line 130

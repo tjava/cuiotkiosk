@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %} Cuiotkiosk | Make Payment {% endblock %}
+
+{% block body %}
+
+    <div id="main">
+		<div class="container-fluid">
+		    <ul class="list-group borderless">
+                        <li class="list-group-item align-items-center">
+                            <svg class="icon-sprite icon-1x">
+                                <use class="glow" fill="url(#radial-glow)" xlink:href="assets/images/icons-sprite.svg#glow"></use>
+                                <use xlink:href="assets/images/icons-sprite.svg#wash-machine"></use>
+                            </svg>
+                            <h5>Pay #{{ _get.minutes*5 }}</h5>
+                        </li>
+                    </ul>
+		    <div class="tab-content px-4 px-sm-0 py-sm-4 mt-4">
+                  <!-- Personal pane START -->
+                  <div class="tab-pane fade show active" id="personal" role="tabpanel">
+                    <form method="get" action="/iot/pay">
+                      <div class="form-group row">
+                        <label for="first-name" class="col-12 col-sm-3 col-form-label">Card Name</label>
+                        <div class="col-12 col-sm-9">
+                          <input class="form-control custom-focus" type="text" value="Joe Doe" id="first-name">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="last-name" class="col-12 col-sm-3 col-form-label">Card Number</label>
+                        <div class="col-12 col-sm-9">
+                          <input class="form-control custom-focus" type="text" value="5399-3232-4352-4343" id="last-name">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="user-email" class="col-12 col-sm-3 col-form-label">Expire Date</label>
+                        <div class="col-12 col-sm-9">
+                          <input class="form-control custom-focus" type="text" value="10/24" id="user-email">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="user-tel" class="col-12 col-sm-3 col-form-label">Cvv</label>
+                        <div class="col-12 col-sm-9">
+                          <input class="form-control custom-focus" type="number" value="343" id="user-tel">
+                        </div>
+                      </div>
+                      <input class="form-control custom-focus" type="hidden" name="switch" value="{{ _get.switch }}" id="user-tel">
+                      <div class="form-group row">
+                        <div class="offset-xs-0 offset-sm-3 col-12 col-sm-9 mt-3">
+                          <button type="submit" class="btn btn-primary">Pay Now</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Personal pane END -->
+                  
+                  <!-- Password pane END -->
+                </div>
+            
+        
+  
+{% endblock %}

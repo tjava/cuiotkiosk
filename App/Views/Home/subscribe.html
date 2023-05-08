@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %} Cuiotkiosk | Subscribe {% endblock %}
+
+{% block body %}
+
+    <div id="main">
+		<div class="container-fluid">
+		    <div class="col-sm-12 col-md-6">
+                <!-- Washing machine  START -->
+                <div class="card active" data-unit="wash-machine">
+                    <ul class="list-group borderless">
+                        <li class="list-group-item align-items-center">
+                            <svg class="icon-sprite icon-1x">
+                                <use class="glow" fill="url(#radial-glow)" xlink:href="assets/images/icons-sprite.svg#glow"></use>
+                                <use xlink:href="assets/images/icons-sprite.svg#wash-machine"></use>
+                            </svg>
+                            <h5>Available Switch</h5>
+                            <p class="ml-auto status">{{ available }}</p>
+                        </li>
+                    </ul>
+                    <div class="only-if-active">
+                        <hr class="my-0">
+                        <form method="get" action="/setsub">
+                        <ul class="list-group borderless px-1">
+                            <li class="list-group-item pb-0">
+                                <p class="specs">Rate</p>
+                                <p class="ml-auto mb-0 text-primary">#5/minute</p>
+                            </li>
+                            <li class="list-group-item pb-0">
+                                <p class="specs">Minutes</p>
+                                <div class=" ml-auto mb-0 text-primary">
+                                  <input class="form-control custom-focus" type="number" name="minutes" id="min" size="5" required>
+                                </div>
+                            </li>
+                            <!--<li class="list-group-item">-->
+                            <!--    <p class="specs">Remaining time</p>-->
+                            <!--    <p id="wash-machine" class="ml-auto mb-0">00:00:49</p>-->
+                            <!--</li>-->
+                            <input class="form-control custom-focus" type="hidden" name="switch" value="switch{{ available }}" id="user-tel">
+                            <li class="list-group-item pb-4 timer-controls" data-controls="wash-machine">
+                                <button data-action="pause" type="submit" class="btn btn-secondary btn-block wash-control" style="display: block;">Make Payment</button>
+                            </li>
+                        </ul>
+                        </form>
+                    </div>
+                </div>
+                <!-- Washing machine  END -->
+            </div>
+            
+        
+  
+{% endblock %}

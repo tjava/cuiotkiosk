@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %} Data | Project Popoola{% endblock %}
+
+{% block nav %} Data {% endblock %}
+
+{% block body %}
+{% for message in flash_messages %}
+	<div class="alert alert-{{ message.type }}">
+		{{ message.body }}
+	</div>
+{% endfor %}
+<script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+<br>
+<div class="container-fluid">
+	<div class="row">
+	  <div class="col-md-8">
+		<div class="card">
+		  <div class="header">
+			<h4 class="title">Data Table</h4>
+			<br>
+			<a href="/iot/deleteall" style="float: right; background-color: red;" class="btn btn-info btn-fill btn-wd">Reset Database</a>
+			<a href="" id="export_button" style="float: left; background-color: green;" class="btn btn-info btn-fill btn-wd">Export Data</a>
+			<br>
+		  </div>
+		  <div class="content table-responsive table-full-width">
+			<table id="employee_data" class="table table-striped">
+			  <thead>
+			  <tr>
+				<th>Current1 (A)</th>
+				<th>Current2 (A)</th>
+				<th>Current3 (A)</th>
+				<th>Battery  (%)</th>
+				<th>TIME (Y-M-D H:M:S)</th>
+			  </tr>
+			  </thead>
+			  {% for data in datas %}
+			  <tbody>
+			  <tr>
+				<td>{{ data.current1 }}</td>
+				<td>{{ data.current2 }}</td>
+				<td>{{ data.current3 }}</td>
+				<td>{{ data.battery }}</td>
+				<td>{{ data.time }}</td>
+				<td><a href="/iot/delete?id={{ data.id }}" style="float: right; color: red;" class="">DELETE</a></td>
+			  </tr>
+			  </tbody>
+			  {% endfor %}
+			</table>
+
+		  </div>
+		</div>
+	  </div>
+
+
+	</div>
+  </div>
+  
+  <script type="text/javascript">
+     function html_table_to_excel(type)
+    {
+        var data = document.getElementById('employee_data');
+
+        var file = XLSX.utils.table_to_book(data, {sheet: "sheet1"});
+
+        XLSX.write(file, { bookType: type, bookSST: true, type: 'base64' });
+
+        XLSX.writeFile(file, 'data.' + type);
+    }
+
+    const export_button = document.getElementById('export_button');
+
+    export_button.addEventListener('click', () =>  {
+        html_table_to_excel('xlsx');
+    });
+  </script>
+
+{% endblock %}

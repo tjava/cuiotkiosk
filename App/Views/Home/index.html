@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block title %} Cuiotkiosk | Dashboard {% endblock %}
+
+{% block body %}
+
+    <div id="main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <!-- Security system START -->
+                <div class="card lock" data-unit="switch-house-lock">
+                    <div class="card-body d-flex flex-wrap">
+                        <svg class="icon-sprite icon-2x">
+                          <use xlink:href="assets/images/icons-sprite.svg#home"/>
+                          <use class="subicon-unlocked" xlink:href="assets/images/icons-sprite.svg#subicon-unlocked"/>
+                          <use class="subicon-locked" xlink:href="assets/images/icons-sprite.svg#subicon-locked"/>
+                        </svg>
+                        <div class="title-status">
+                            <h4>All Users</h4>
+                            <p class="text-center text-success"><span class="arm"></span>{{ countUser }}+</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Security system END -->
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <!-- Security system START -->
+                <div class="card lock" data-unit="switch-house-lock">
+                    <div class="card-body d-flex flex-wrap">
+                        <svg class="icon-sprite icon-2x">
+                          <use xlink:href="assets/images/icons-sprite.svg#home"/>
+                          <use class="subicon-unlocked" xlink:href="assets/images/icons-sprite.svg#subicon-unlocked"/>
+                          <use class="subicon-locked" xlink:href="assets/images/icons-sprite.svg#subicon-locked"/>
+                        </svg>
+                        <div class="title-status">
+                            <h4>All Switches</h4>
+                            <p class="text-center"><span class="arm"></span>20</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Security system END -->
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <!-- Security system START -->
+                <div class="card lock" data-unit="switch-house-lock">
+                    <div class="card-body d-flex flex-wrap">
+                        <svg class="icon-sprite icon-2x">
+                          <use xlink:href="assets/images/icons-sprite.svg#home"/>
+                          <use class="subicon-unlocked" xlink:href="assets/images/icons-sprite.svg#subicon-unlocked"/>
+                          <use class="subicon-locked" xlink:href="assets/images/icons-sprite.svg#subicon-locked"/>
+                        </svg>
+                        <div class="title-status">
+                            <h4>Free Switches</h4>
+                            <p class="text-center text-success"><span class="arm"></span>{{ freeSwitch }}</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Security system END -->
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <!-- Security system START -->
+                <div class="card lock" data-unit="switch-house-lock">
+                    <div class="card-body d-flex flex-wrap">
+                        <svg class="icon-sprite icon-2x">
+                          <use xlink:href="assets/images/icons-sprite.svg#home"/>
+                          <use class="subicon-unlocked" xlink:href="assets/images/icons-sprite.svg#subicon-unlocked"/>
+                          <use class="subicon-locked" xlink:href="assets/images/icons-sprite.svg#subicon-locked"/>
+                        </svg>
+                        <div class="title-status">
+                            <h4>Used Switches</h4>
+                            <p class="text-center text-danger"><span class="arm"></span>{{ usedSwitch }}</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- Security system END -->
+            </div>
+            
+        </div>
+        <br><br>
+    </div>
+    <!-- Main content overlay when side menu appears  -->
+    <div class="cover-offcanvas" data-toggle="offcanvas"></div>
+</div>
+  
+{% endblock %}

@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block title %} Cuiotkiosk | Switches {% endblock %}
+
+{% block body %}
+
+    <div id="main">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-xl-4">
+				    {% if current_user.on_switch %}
+    				    <div class="card" data-unit-group="switch-lights">
+    						<div class="card-body">
+    							<h3 class="card-title">On Switch{{ current_user.on_switch|last|slice(0,1) }}</h3>
+    						</div>
+    						<ul class="list-group list-group-flush">
+    						    <li class="list-group-item d-flex active" data-unit="switch-light-{{i}}">
+    								<svg class="icon-sprite">
+    									<use class="glow" fill="url(#radial-glow)" xlink:href="assets/images/icons-sprite.svg#glow"/>
+    									<use xlink:href="assets/images/icons-sprite.svg#bulb-eco"/>
+    								</svg>
+    								<h5>Switch {{ current_user.on_switch|last|slice(0,1) }}</h5>
+    								<label class="switch ml-auto checked">
+    									<input type="checkbox" checked >
+    								</label>
+    								<div class="info-holder info-rb" style="right:40px;">
+    									<div data-toggle="popover-all" data-content="Checkbox element using localStorage to remember the last status." data-original-title="Switch ON/OFF" data-container="body" data-placement="top" data-offset="0,-6"></div>
+    								</div>
+    							</li>
+    						</ul>
+    					</div>
+				    {% else %}
+    				    {% if current_user.unique_id != 32120 %}
+    				    <div class="card-body">
+    				        <a href="/subscribe">
+        						<div class="lights-controls" data-controls="switch-lights">
+        							<button data-action="all-off" type="button" class="btn btn-secondary lights-control"><strong>Subscribe</strong></button>
+        						</div>
+    						</a>
+    					</div>
+    					{% endif %} 
+    					<!-- Interior lights  START -->
+    					<div class="card" data-unit-group="switch-lights">
+    						<div class="card-body">
+    							<h3 class="card-title">Switches</h3>
+    						</div>
+    						<ul class="list-group list-group-flush">
+    						    {% for i in 0..19 %}
+    							<li class="list-group-item d-flex active" data-unit="switch-light-{{i}}">
+    								<svg class="icon-sprite">
+    									<use class="glow" fill="url(#radial-glow)" xlink:href="assets/images/icons-sprite.svg#glow"/>
+    									<use xlink:href="assets/images/icons-sprite.svg#bulb-eco"/>
+    								</svg>
+    								<h5>Switch {{ i+1 }}</h5>
+    								<label class="switch ml-auto {% if datas[i] == 1 %} checked {% endif %}">
+    									<input type="checkbox" {% if datas[i] == 1 %} checked {% endif %} {% if current_user.unique_id == 32120 %} id="switch-light-{{i}}" onclick="change({{i+1}}, {{datas[i]}});" {% endif %}>
+    								</label>
+    								<div class="info-holder info-rb" style="right:40px;">
+    									<div data-toggle="popover-all" data-content="Checkbox element using localStorage to remember the last status." data-original-title="Switch ON/OFF" data-container="body" data-placement="top" data-offset="0,-6"></div>
+    								</div>
+    							</li>
+    							{% endfor %}
+    						</ul>
+    						{% if current_user.unique_id == 32120 %}
+        						<div class="card-body">
+        							<div class="lights-controls" data-controls="switch-lights">
+        								<button data-action="all-on" type="button" class="btn btn-primary lights-control" onclick="changeAll(1);">All <strong>ON</strong></button>
+        								<button data-action="all-off" type="button" class="btn btn-secondary lights-control" onclick="changeAll(0);">All <strong>OFF</strong></button>
+        							</div>
+        						</div>
+    						{% endif %} 
+    					</div>
+					{% endif %} 
+					<!-- Interior lights  END -->
+				</div>
+			</div>
+			<br><br>
+		</div>
+		<!-- Main content overlay when side menu appears  -->
+		<div class="cover-offcanvas" data-toggle="offcanvas"></div>
+	</div>
+	
+	<script>
+	
+        function change(id, value)
+        {
+          var newValue;
+          if(value == 0) {
+              newValue = 1;
+          } else {
+              newValue = 0;
+          }
+          window.location.href = "/iot/changeswitch?switch=switch"+id+"&value="+newValue;
+        }
+        
+        function changeAll(value)
+        {
+          window.location.href = "/iot/changeallswitch?value="+value;
+        }
+	
+	</script>
+  
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block title %}Reset password{% endblock %}
+
+{% block body %}
+
+    <h1>Reset password</h1>
+
+    {% if user.errors is not empty %}
+        <p>Errors:</p>
+        <ul>
+            {% for error in user.errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <!-- page -->
+	<div class="services-breadcrumb">
+		<div class="agile_inner_breadcrumb">
+			<div class="container">
+				<ul class="w3_short">
+					<li>
+						<a href="index.html">Home</a>
+						<i>|</i>
+					</li>
+					<li>Reset Password</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- //page -->
+
+	<!-- contact -->
+	<div class="contact py-sm-5 py-4">
+		<div class="container py-xl-4 py-lg-2">
+			<!-- tittle heading -->
+			<h3 class="tittle-w3l text-center mb-lg-5 mb-sm-4 mb-3">
+				<span>R</span>eset
+				<span>P</span>assword
+			</h3>
+			<!-- form -->
+			<form method="post" action="/password/reset-password">
+				<div class="contact-grids1 w3agile-6">
+					<div class="row">
+                        <input type="hidden" name="token" value="{{ token }}" />
+
+						<div class="col-md-12 col-sm-12 contact-form1 form-group">
+							<label class="col-form-label">New Password</label>
+							<input type="password" class="form-control" name="password" placeholder="" required="">
+						</div>
+						<div class="col-md-12 col-sm-12 contact-form1 form-group">
+							<label class="col-form-label">Confirm Password</label>
+							<input type="password" class="form-control" name="confirm_password" placeholder="" required="">
+						</div>
+					</div>
+					<div class="contact-form col-sm-12 col-md-12">
+						<input type="submit" value="Reset Password">
+					</div>
+				</div>
+			</form>
+			<!-- //form -->
+		</div>
+    </div>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+	<!-- //contact -->
+
+{% endblock %}
