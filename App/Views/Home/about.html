@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block title %} Cuiotkiosk | About {% endblock %}
+
+{% block body %}
+    <style>
+        /*.container {*/
+        /*  display: grid;*/
+        /*  grid-template-columns: 1fr;*/
+        /*  grid-gap: 10px;*/
+        /*}*/
+        
+        /*.item {*/
+        /*  background-color: lightgray;*/
+        /*  padding: 10px;*/
+        /*}*/
+        
+        /*@media (min-width: 768px) {*/
+        /*  .container {*/
+        /*    grid-template-columns: 1fr 1fr;*/
+        /*  }*/
+        /*}*/
+
+
+    </style>
+    <div id="main">
+		<div class="container-fluid">
+		    {% for data in datas%}
+		    <div class="item">
+            <center> <img src="{{ data.image }}" alt="" style="width: 400px; height: 400px; "> </center>
+            
+           <center>
+                <div class="card active" data-unit="wash-machine" style="width:400px;">
+    			    <ul class="list-group borderless">
+                        <li class="list-group-item align-items-center">
+                           <center> <h5>{{ data.title }}</h5></center>
+                        </li>
+                    </ul>
+                    
+                    <p class="specs" style="padding: 20px;">{{ data.content }}</p>
+                            
+                </div>
+            </center>
+            <br>
+            {% endfor %}
+            {% if current_user.unique_id == 32120 %}
+                <a href="/updateaboutpage">
+                    <div class="form-group row">
+                        <div class="col-12 mt-3 mb-2 text-center">
+                            <button type="submit" class="btn btn-primary btn-block">Update About</button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+  
+{% endblock %}
